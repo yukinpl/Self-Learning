@@ -31,5 +31,8 @@ Gtk는 C로 되어 있으니 C/C++로 사용하기에 문제 없으나 C++로 �
 ```shell
 `pkg-config --cflags --libs gtkmm-3.0`
 ```
-
+정상적으로 잘 되면 아래와 같이 컴파일 할 수 있다.
+```shell
+clang++ -Wall -g *.cpp -o hello `pkg-config --cflags --libs gtkmm-3.0` -std=c++17
+```
 Ubuntu 22.04에는 gtkmm Ver 3.x 가 기본으로 준비되어 있다. Ver 4.x는 직접 설치해야한다.
