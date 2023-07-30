@@ -18,3 +18,4 @@ clang -Wall -g gtktest.c -o hello `pkg-config --cflags --libs gtk4`
 
 
 
+Test 를 위한 Source File은 https://www.gtk.org/ 메인 화면의 C source를 그대로 컴파일 해 보는 것이 좋다.
