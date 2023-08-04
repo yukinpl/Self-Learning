@@ -2,6 +2,24 @@
 
 
 
+### Ubuntu 에서 개발 환경 설치는
+
+gtk4의 경우 
+
+```shell
+sudo apt-get install libgtk-*
+```
+
+gtkmm의 경우
+
+```shell
+sudo apt-get install libgtkmm-*
+```
+
+
+
+
+
 ### Compile 참고사항
 
 include path와 link path를 하나 하나 기록하는 것은 너무 불편함으로 다음과 같이 pkg-config를 통해 Path를 가져온다. 우선 아래와 같이 shell에서 실행하여 include path와 link path가 표현되는지 확인한다.
