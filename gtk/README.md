@@ -20,7 +20,7 @@ sudo apt-get install libgtkmm-*
 
 
 
-### Compile 참고사항
+### Gtk4 - Compile 참고사항
 
 include path와 link path를 하나 하나 기록하는 것은 너무 불편함으로 다음과 같이 pkg-config를 통해 Path를 가져온다. 우선 아래와 같이 shell에서 실행하여 include path와 link path가 표현되는지 확인한다.
 
@@ -42,7 +42,7 @@ Test 를 위한 Source File은 https://www.gtk.org/ 메인 화면의 C source를
 
 
 
-### Gtkmm
+### Gtkmm - Compile 참고사항
 
 Gtk는 C로 되어 있으니 C/C++로 사용하기에 문제 없으나 C++로 개발하기 편하도록 Gtkmm이 별도로 존재한다. Gtk를 Wrapping 하였다고 한다. Gtk와 동일하게 아래와 같이 점검할 수 있다.
 
