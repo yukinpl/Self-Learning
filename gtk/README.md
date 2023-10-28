@@ -16,9 +16,9 @@ gtkmm의 경우
 sudo apt-get install libgtkmm-*
 ```
 
+  
 
-
-
+  
 
 ### Gtk4 - Compile 참고사항
 
@@ -34,13 +34,13 @@ include path와 link path를 하나 하나 기록하는 것은 너무 불편함�
 clang -Wall -g gtktest.c -o hello `pkg-config --cflags --libs gtk4`
 ```
 
-
+  
 
 Test 를 위한 Source File은 https://www.gtk.org/ 메인 화면의 C source를 그대로 컴파일 해 보는 것이 좋다.
 
+  
 
-
-
+  
 
 ### Gtkmm - Compile 참고사항
 
@@ -56,13 +56,13 @@ clang++ -Wall -g *.cpp -o hello `pkg-config --cflags --libs gtkmm-3.0` -std=c++1
 Ubuntu 22.04에는 gtkmm Ver 3.x 가 기본으로 준비되어 있다. Ver 4.x는 직접 설치해야한다.
 아래 내용을 참고하여 Ver 4.x을 설치했다면 gtkmm-3.0 부분을 gtkmm-4.0으로 바꿔 컴파일하면 된다.
 
-
+  
 
 ### Gtkmm - ver 4.x 설치
 
 Ubuntu 22.04 에는 gtkmm Ver 3.x 가 기본으로 준비되어 있어서 Ver 4.x는 Repo를 통한 바이너리 설치를 하는 것이 아니라 직접 컴파일 해서 설치해야 한다. 또한, dependency 도 대부분 Repo에 포함되어 있지 않으므로 관련 lib도 직접 컴파일 해서 설치할 필요가 있다.
 
-
+  
 
 ##### docbook-xsl
 
@@ -72,7 +72,7 @@ Ubuntu 22.04 에는 gtkmm Ver 3.x 가 기본으로 준비되어 있어서 Ver 4.
 sudo apt-get install docbook-xsl
 ```
 
-
+  
 
 ##### libsigc++-3.6.0
 
@@ -95,9 +95,9 @@ sudo ln -s /usr/local/lib/libsigc-3.0.so.0 /usr/lib/libsigc-3.0.so.0
 
 생성시 미리 파일 명을 확인 하는 것이 좋다.
 
+  
 
-
-
+  
 
 ##### glibmm
 ```shell
@@ -109,7 +109,7 @@ make
 sudo make install
 ```
 
-
+  
 
 ##### cairomm
 
@@ -122,7 +122,7 @@ make
 sudo make install
 ```
 
-
+  
 
 ##### pangomm
 
@@ -135,7 +135,7 @@ make
 sudo make install
 ```
 
-
+  
 
 ##### gtkmm
 
